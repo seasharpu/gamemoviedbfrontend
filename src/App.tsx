@@ -19,7 +19,7 @@ function App() {
         >
           Learn React
         </a>
-        <Searchbar placeholder="hej" styling=""></Searchbar>
+        <Searchbar placeholder="game, soundtrack..." styling="" type="gameAPI"></Searchbar>
       </header>
     </div>
   );
