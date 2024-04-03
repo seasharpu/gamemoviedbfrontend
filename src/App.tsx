@@ -19,7 +19,6 @@ function App() {
         >
           Learn React
         </a>
-        <Searchbar placeholder="game, soundtrack..." styling="" type="gameAPI"></Searchbar>
       </header>
     </div>
   );

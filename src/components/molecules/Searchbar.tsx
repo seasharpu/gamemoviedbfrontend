@@ -46,3 +46,6 @@ export const Searchbar = ({ placeholder, styling, type }:
         </div>
     );
 }
+
+// how it is used
+//<Searchbar placeholder="game, soundtrack..." styling="" type="gameAPI"></Searchbar>
