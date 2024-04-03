@@ -1,6 +1,5 @@
 import { IoSearch } from "react-icons/io5";
 import { useState } from "react";
-import { motion } from 'framer-motion'
 
 export const Searchbar = ({ placeholder, styling, type }: 
     { 
@@ -26,6 +25,7 @@ export const Searchbar = ({ placeholder, styling, type }:
                 //function to fetch AI tool from backend.
                 break;
             }
+            /*add more if needed*/
         }
 
     const [input_text, setInput_text] = useState("");
@@ -41,7 +41,7 @@ export const Searchbar = ({ placeholder, styling, type }:
                     value={input_text}
                     onChange={(e) => {setInput_text(e.target.value)}}
                 ></input>
-                <IoSearch className={`${searchbar_styling} ${input_text.length !== 0 ? "opacity-1 hover:w-10 hover:h-10 active:w-8 active:h-8" : "opacity-30"} transition-all`}></IoSearch>
+                <IoSearch onClick={fetchFunction} className={`${searchbar_styling} ${input_text.length !== 0 ? "opacity-1 hover:w-10 hover:h-10 active:w-8 active:h-8" : "opacity-30"} transition-all`}></IoSearch>
             </div>
         </div>
     );
