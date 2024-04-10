@@ -1,7 +1,4 @@
-import { useRef } from "react";
 import { BsMusicNoteBeamed } from "react-icons/bs";
-import Title from "../atoms/Title";
-import { BodyText } from "../atoms/BodyText";
 import { LoopingTextField } from "../atoms/LoopingTextField";
 import { useState } from "react";
 import { IoPlay } from "react-icons/io5";
@@ -40,7 +37,7 @@ export const Soundtrack = ({ title, composer, thumbnail }:
             </div>
             <div className="flex flex-col items-center w-4/6">
                 <LoopingTextField input={title} size="normal" text_color="white" styling="" ></LoopingTextField>
-                <LoopingTextField input={composer} size="normal" text_color="white" styling=""></LoopingTextField>
+                <LoopingTextField input={composer} size="normal" text_color="white" styling="" ></LoopingTextField>
             </div>
             <div>
                 <div className="w-10 h-10 bg-main-purple rounded-3xl flex justify-center items-center">
@@ -53,12 +50,3 @@ export const Soundtrack = ({ title, composer, thumbnail }:
 
 //how to use it
 //<Soundtrack title="Victory" composer="Joris de Man" thumbnail={"https://images.unsplash.com/photo-1609931386751-940a91933d9c?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}></Soundtrack>
-
-
-//<BodyText text={title} text_color="white" size="normal" styling="absolute whitespace-nowrap origin-left hover:translate-x-10 transition-all" ></BodyText>
-//<Title text={composer} text_color="white" size="medium" styling="" ></Title>
-
-//<div className="flex flex-col items-center">
-//<Title text={title} text_color="white" size="medium" styling="" ></Title>
-//<Title text={composer} text_color="white" size="medium" styling="" ></Title>
-//</div>

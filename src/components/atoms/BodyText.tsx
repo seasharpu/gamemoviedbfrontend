@@ -1,10 +1,10 @@
-export const BodyText = ({ text, text_color, size, styling, ref }: 
+export const BodyText = ({ text, text_color, size, styling, id }: 
     { 
         text: string | null
         text_color: string,
         size: string,
         styling: string,
-        ref?: React.RefObject<HTMLDivElement>
+        id?: string
     }) => {
 
     let converted_size = ""
@@ -25,10 +25,10 @@ export const BodyText = ({ text, text_color, size, styling, ref }:
         }
 
     const inline_styling = `text-${text_color} ${converted_size} ${styling}`;
-    console.log(ref);
+    console.log(id);
     
     
     return (
-        <span ref={ref} className={`${inline_styling}`}>{text}</span>
+        <span id={id} className={`${inline_styling}`}>{text}</span>
     );
 }

@@ -21,7 +21,6 @@ function App() {
           Learn React
         </a>
         <Searchbar placeholder="hej" styling=""></Searchbar>
-        <Soundtrack title="titel feiwkfew fwefnwef we gweg ewgr g w weg j wr gerj gwkgwg" composer="composer" thumbnail={"https://images.unsplash.com/photo-1609931386751-940a91933d9c?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}></Soundtrack>
       </header>
     </div>
   );
