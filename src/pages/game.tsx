@@ -1,5 +1,5 @@
-export default function Game() {
-  return (
-    <p>Game</p>
-  );
-}
+const Game = () => {
+  return <h1>detta är game</h1>;
+};
+
+export default Game;
