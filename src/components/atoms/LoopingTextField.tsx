@@ -30,19 +30,10 @@ export const LoopingTextField = ({ input, text_color, size, styling }:
             
             setIsTextWide(true);
 
-
             //Calculate duration based on text length and container width
             const duration = (text_width + container_width) / 0.05; // Adjust the division factor for desired speed
 
-            console.log("text" + text?.offsetWidth);
-            console.log("container" + container?.offsetWidth);
-            //////////////////////////////////////////////////////////////
-            ///////////////////////////////////////////////////////////////
-            // + (text!.offsetWidth / 10);
             let transformlength = text!.offsetWidth - container!.offsetWidth
-            console.log("transformlength" + transformlength);
-            
-            //${text!.offsetWidth}
 
             const keyframes = [
                 { transform: 'translateX(0%)' },
@@ -59,8 +50,6 @@ export const LoopingTextField = ({ input, text_color, size, styling }:
             };
 
             const animation = text!.animate(keyframes, options);
-            //console.log("textRef:", textRef.current);
-            //console.log("containerRef:", containerRef.current);
             return () => {
                 animation.cancel();
             };
@@ -77,12 +66,4 @@ export const LoopingTextField = ({ input, text_color, size, styling }:
             <BodyText id={`text_slide${slide_id}`} text={input} text_color={text_color} size={size} styling={`text-nowrap text-lg lg:text-2xl xl:text-4xl ${styling}`}></BodyText>
         </div>
     );
-
 };
-//<div ref={containerRef} className=''>
-//<span ref={textRef} className={` text-${text_color}`} >{input}</span>
-//</div>
-//<BodyText text={input} text_color={text_color} size={size} styling={`absolute whitespace-nowrap origin-left ${styling}`}></BodyText>
-
-
-//            <BodyText id="text_slide" className={`text-${text_color} text-nowrap text-lg lg:text-2xl xl:text-4xl`} >{input}</BodyText>
