@@ -1,9 +1,10 @@
-export const BodyText = ({ text, text_color, size, styling }: 
+export const BodyText = ({ text, text_color, size, styling, id }: 
     { 
-        text: string, 
+        text: string | null
         text_color: string,
         size: string,
-        styling: string
+        styling: string,
+        id?: string
     }) => {
 
     let converted_size = ""
@@ -24,8 +25,10 @@ export const BodyText = ({ text, text_color, size, styling }:
         }
 
     const inline_styling = `text-${text_color} ${converted_size} ${styling}`;
+    console.log(id);
+    
     
     return (
-        <p className={`${inline_styling}`}>{text}</p>
+        <span id={id} className={`${inline_styling}`}>{text}</span>
     );
 }
