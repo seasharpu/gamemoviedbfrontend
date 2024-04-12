@@ -27,7 +27,7 @@ export const Soundtrack = ({ title, composer, thumbnail }:
     }
 
     return (
-        <div className="w-5/6 h-20 bg-blue-purple text-white rounded-md flex flex-row items-center justify-between px-2">
+        <div className="w-full h-20 bg-blue-purple text-white rounded-md flex flex-row items-center justify-between px-2">
             <div className="w-14 h-14 bg-main-purple rounded-md flex justify-center items-center">
                 {thumbnail === undefined ? 
                     <BsMusicNoteBeamed className="w-8 h-8 text-green"></BsMusicNoteBeamed>
