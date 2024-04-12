@@ -25,9 +25,6 @@ export const LoopingTextField = ({ input, text_color, size, styling }:
 
         //only when text block is bigger than container, it will animate
         if (text_width >= container_width) {
-            console.log("input:" + input);
-            console.log("text: " + text);
-            
             setIsTextWide(true);
 
             //Calculate duration based on text length and container width
@@ -54,10 +51,7 @@ export const LoopingTextField = ({ input, text_color, size, styling }:
                 animation.cancel();
             };
 
-        }else {
-            setIsTextWide(false);
-        }
-        console.log(isTextWide);
+        }else { setIsTextWide(false);}
         
     }, [input]); // []
 

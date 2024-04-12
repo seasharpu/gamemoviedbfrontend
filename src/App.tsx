@@ -1,8 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { AIPopupTool } from './components/home/AIPopupTool';
 
 function App() {
+
+  //handles the display of AITool
+  const [AItoolOpen, setAItoolOpen] = useState(false);
+  const handleClose = () => {setAItoolOpen(false)}
+  const handleOpen = () => {setAItoolOpen(true)}
+
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +25,8 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={handleOpen}>Klicka här</button>
+        <AIPopupTool isAIToolOpen={AItoolOpen} handleClose={handleClose}></AIPopupTool>
       </header>
     </div>
   );
