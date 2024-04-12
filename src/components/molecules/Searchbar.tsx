@@ -33,7 +33,7 @@ export const Searchbar = ({ placeholder, styling, type }:
     
     return (
         <div className={`${styling} w-full flex justify-center`}>
-            <div className="w-4/6 border-4 border-green sm-border text-green bg-transparent rounded-3xl px-3 flex justify-between items-center">
+            <div className="w-full border-4 border-green sm-border text-green bg-transparent rounded-3xl px-3 flex justify-between items-center">
                 <input 
                     className="w-full bg-transparent focus:outline-none py-2" 
                     placeholder={placeholder} 
