@@ -1,5 +1,5 @@
 export default function User() {
   return (
-    <p>Usaaaaaaaaaaaaaaaaaaaaaar</p>
+    <p>User</p>
   );
 }

@@ -1,5 +1,5 @@
-export default function fourohfour() {
+export default function Fourohfour() {
   return (
-    <p>fourohfour</p>
+    <p>Fourohfour</p>
   );
 }
