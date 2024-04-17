@@ -1,5 +1,5 @@
 export default function Game() {
   return (
-    <p>Game</p>
+    <p>This is the Game Page</p>
   );
 }
