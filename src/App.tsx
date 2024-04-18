@@ -12,7 +12,7 @@ import Fourohfour from "./pages/Fourohfour";
 
 function App() {
   return (
-    <div className="App">   
+    <div className="App">
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<NavBar />}>
@@ -24,8 +24,8 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
-    <Searchbar placeholder="hej" styling=""></Searchbar>
   </div>
   );
 }
+
 export default App;
