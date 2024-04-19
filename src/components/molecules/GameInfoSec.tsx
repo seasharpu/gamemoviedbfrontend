@@ -19,5 +19,3 @@ export const Searchbar = ({ pictureUrl, Title, BodyText }: { pictureUrl: string,
     );
 }
 
-// how it is used
-//<Searchbar placeholder="game, soundtrack..." styling="" type="gameAPI"></Searchbar>
