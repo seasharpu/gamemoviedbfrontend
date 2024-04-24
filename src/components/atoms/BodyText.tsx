@@ -25,7 +25,7 @@ export const BodyText = ({ text, text_color, size, styling, id }:
         }
 
     const inline_styling = `text-${text_color} ${converted_size} ${styling}`;
-    console.log(id);
+
     
     
     return (

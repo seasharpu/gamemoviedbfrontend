@@ -3,11 +3,11 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/molecules/Navbar";
-import Home from './pages/home';
-import User from './pages/user';
+import Home from './pages/Home';
+import User from './pages/User';
 import Game from "./pages/Game";
 import Franchise from "./pages/Franchise";
-import Fourohfour from './pages/fourohfour';
+import Fourohfour from './pages/Fourohfour';
 
 function App() {
   return (
