@@ -1,12 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Searchbar } from './components/molecules/Searchbar';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/molecules/Navbar";
-import Home from "./pages/Home";
-import User from "./pages/User";
-import Game from "./pages/Game";
+import Home from "./pages/home";
+import User from "./pages/user";
+import Game from "./pages/game";
 import Franchise from "./pages/Franchise";
 import Fourohfour from "./pages/Fourohfour";
 
@@ -24,7 +23,6 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
-    <Searchbar placeholder="hej" styling=""></Searchbar>
   </div>
   );
 }
