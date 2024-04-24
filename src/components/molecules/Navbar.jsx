@@ -1,7 +1,4 @@
 import { Outlet, Link } from "react-router-dom";
-//import { ReactComponent as HomeSVG } from './../../assets/Home.svg';
-//import { ReactComponent as FranchiseSVG } from './../../assets/Franchise.svg';
-//import { ReactComponent as UserSVG } from './../../assets/User.svg';
 import { TiHome } from "react-icons/ti";
 import { IoLibrary } from "react-icons/io5";
 import { FaUser } from "react-icons/fa";
