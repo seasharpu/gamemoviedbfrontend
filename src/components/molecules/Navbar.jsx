@@ -8,9 +8,8 @@ const NavBar = () => {
   const [isActive, setIsActive] = useState("/")
 
   //svg containers
-  //inner-border-2 inner-border-blue-purple border-blue-purple border-2
   const con_base_styling = "w-16 h-16 flex justify-center items-end rounded-full relative transition-colors z-10 hover:bg-main-purple"
-  const con_non_active_styling = "bg-main-purple hover:bg-green"
+  const con_non_active_styling = "bg-main-purple hover:bg-main-purple-accent"
   const con_active_styling = "bg-main-purple overflow-hidden "
 
   //svgs
@@ -27,7 +26,7 @@ const NavBar = () => {
   return (
     <>
       <nav>
-        <ul className="flex col justify-around bg-blue-purple h-28 items-center">
+        <ul className="flex col justify-around bg-blue-purple h-28 items-center ">
           <Link to="/" className={isActive === "/" ? "cursor-auto" : "cursor-pointer"} onClick={() => { change_nav("/") }}>
             <li className={`${con_base_styling} ${isActive === "/" ? con_active_styling : con_non_active_styling}`} >
               <BiSolidHomeAlt2 className={`${base_styling} ${isActive === "/" ? active_styling : non_active_styling}`} />
