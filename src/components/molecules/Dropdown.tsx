@@ -8,6 +8,9 @@ export const Dropdown = ({ dropped_elements, dropped_down, styling }: {
     styling: string
 }) => {
 
+    //dropped_down is not in use now. for future 
+    //use in more dynamic style between components
+
     const [isVisible, setIsVisible] = useState(false)
 
     const toggleVisibility = () => {

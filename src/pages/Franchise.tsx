@@ -3,7 +3,6 @@ import { useState } from "react";
 
 export default function Franchise() {
 
-
   const [dropdownData, setDropdownData] = useState(false)
 
   //an example of a structure <Dropdown/> works with
@@ -38,7 +37,7 @@ export default function Franchise() {
           <h5>{franchise.name}</h5>
           <Dropdown 
           dropped_down={dropdownData}
-          styling="w-4/5"
+          styling="w-3/4"
           dropped_elements={
             franchise.games.map((game, index) => (
               <div key={index}>{game}</div>
@@ -46,20 +45,6 @@ export default function Franchise() {
           }></Dropdown>
         </div>
       ))}
-
     </div>
   );
 }
-
-
-//      {/* First Dropdown */}
-//      <Dropdown
-//        dropped_elements={
-//          <div className={`transition-all ${dropdownVisibility ? "opacity-100 h-auto" : "opacity-0 h-0"}`}>
-//            <div>hej</div>
-//            <div>hej</div>
-//            <div>hej</div>
-//          </div>
-//        }
-//        // Pass the callback function as a prop to the child
-//        />
