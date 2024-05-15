@@ -2,29 +2,20 @@ import { IoChevronDownCircleOutline } from "react-icons/io5";
 import { motion } from 'framer-motion'
 import { useState } from "react";
 
-export const Dropdown = ({ dropped_elements, onVisibilityChange }: {
+export const Dropdown = ({ dropped_elements, dropped_down, styling }: {
     dropped_elements: React.ReactNode | React.ReactNode[],
-    onVisibilityChange: (isVisible: boolean) => void
+    dropped_down: boolean,
+    styling: string
 }) => {
 
     const [isVisible, setIsVisible] = useState(false)
 
     const toggleVisibility = () => {
-        //setIsVisible(prevState => !prevState);
-        const newVisibility = !isVisible;
-        setIsVisible(newVisibility);
-        // Send visibility state to the parent
-        onVisibilityChange(newVisibility);
+        setIsVisible(prevState => !prevState);
     }
 
-    //const handleDataSending = () => {
-    //    // Call the callback function passed from the parent
-    //    drop
-    //    onDropdownData('Some data from dropdown');
-    //};
-
     return (
-        <div className="w-4/5 ">
+        <div className={`${styling}`}>
             <div className="flex flex-col items-end w-full">
             <motion.button
                 whileHover={{
