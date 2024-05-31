@@ -3,6 +3,9 @@ import { useState } from "react";
 
 export default function Franchise() {
 
+  //dropDownData will need to be an array with boolean connected with the number of
+  //dropdowns on the page to make the animation work properly
+  //between the component and the page it's on
   const [dropdownData, setDropdownData] = useState(false)
 
   //an example of a structure <Dropdown/> works with
