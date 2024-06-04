@@ -1,24 +1,26 @@
+import { Searchbar } from "../components/molecules/Searchbar";
+import Title from "../components/atoms/Title";
+import { BodyText } from "../components/atoms/BodyText";
+import { Song } from "../components/molecules/Song";
 import { DiscoverWeekly } from "../components/home/DiscoverWeekly";
 
 export default function Home() {
 
-  let soundtracks = [
-    {
-      title: "title",
-      composer: "composer",
-      thumbnail: undefined
-    },
-    {
-      title: "Victory",
-      composer: "Joris De Man",
-      thumbnail: "https://images.unsplash.com/photo-1609931386751-940a91933d9c?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-  ]
 
   return (
-    <div>
-      <p>This is the Home Page</p>
-      <DiscoverWeekly soundtracks={soundtracks}></DiscoverWeekly>
+    <div className="bg-dark-purple h-screen w-full flex flex-col items-center">
+      <Searchbar placeholder="games, soundtracks..." styling="w-4/5 mt-8" type=""></Searchbar>
+      <div className="w-4/5 mt-20">
+        <Title text="TITLE OF WEBPAGE" text_color="white" styling="" size="h2"></Title>
+        <BodyText text="Description of webpage something." text_color="white" styling="" size="medium"></BodyText>
+      </div>
+      <div className="w-4/5 mt-20">
+        <Title text="Listen to this!" text_color="white" styling="mb-3" size="h4"></Title>
+        <Song title="Victory" composer="Joris De Man" thumbnail={undefined}></Song>
+      </div>
+      <div className="w-4/5 mt-20">
+          <DiscoverWeekly></DiscoverWeekly>
+      </div>
     </div>
   );
 }
