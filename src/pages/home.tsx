@@ -7,6 +7,7 @@ import { DiscoverWeekly } from "../components/home/DiscoverWeekly";
 export default function Home() {
 
 
+
   return (
     <div className="bg-dark-purple h-screen w-full flex flex-col items-center">
       <Searchbar placeholder="games, soundtracks..." styling="w-4/5 mt-8" type=""></Searchbar>
@@ -19,7 +20,8 @@ export default function Home() {
         <Song title="Victory" composer="Joris De Man" thumbnail={undefined}></Song>
       </div>
       <div className="w-4/5 mt-20">
-          <DiscoverWeekly></DiscoverWeekly>
+        <Title text="Discover Weekly" text_color="white" styling="mb-3" size="h4"></Title>
+        <DiscoverWeekly></DiscoverWeekly>
       </div>
     </div>
   );
