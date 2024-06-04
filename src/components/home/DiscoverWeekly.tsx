@@ -48,7 +48,7 @@ export const DiscoverWeekly = () => {
     }
 
     return (
-        <div className = {`w-full `} >
+        <div className = {`w-full `}>
             <Carousel 
                 responsive={responsive}
                 swipeable={true}
@@ -64,13 +64,3 @@ export const DiscoverWeekly = () => {
     </div >
     );
 }
-
-//
-//<div className="absolute flex flex-row justify-center"> 
-//{soundtracks.map((track, index) => (
-//    <div key={index} className="w-72 h-72 mx-4">
-//        <ArtistThumb title={track.title} composer={track.composer} thumbnail={track.thumbnail} width_height="full" styling=""></ArtistThumb>
-//    </div>
-//))}
-//</div>
-//
