@@ -7,6 +7,7 @@ import { DiscoverWeekly } from "../components/home/DiscoverWeekly";
 export default function Home() {
 
 
+
   return (
     <div className="bg-dark-purple h-screen w-full flex flex-col items-center">
       <Searchbar placeholder="games, soundtracks..." styling="w-4/5 mt-8" type=""></Searchbar>

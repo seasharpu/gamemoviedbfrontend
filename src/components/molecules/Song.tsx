@@ -4,7 +4,7 @@ import { useState } from "react";
 import { IoPlay } from "react-icons/io5";
 import { FaPause } from "react-icons/fa6";
 
-export const Song = ({ title, composer, thumbnail }: 
+export const Soundtrack = ({ title, composer, thumbnail }: 
     { 
         title: string,
         composer: string,

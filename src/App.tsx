@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import User from './pages/User';
 import Game from "./pages/Game";
 import Franchise from "./pages/Franchise";
-import Fourohfour from "./pages/Fourohfour";
+import Fourohfour from './pages/Fourohfour';
 
 function App() {
   return (
