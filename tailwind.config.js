@@ -16,6 +16,9 @@ module.exports = {
         "black-purple-accent": "#1E193F",
         "green-accent": "#D4E5E0",
       },
+      transitionProperty: {
+        'height': 'height',
+      }
     },
   },
   plugins: [],

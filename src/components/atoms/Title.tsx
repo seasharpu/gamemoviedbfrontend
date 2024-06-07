@@ -1,6 +1,6 @@
 export const Title = ({ text, text_color, size, styling }: 
     { 
-        text: string, 
+        text: string | undefined, 
         text_color: string,
         size: string,
         styling: string,

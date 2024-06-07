@@ -2,6 +2,7 @@ import React from 'react';
 import { BodyText } from '../components/atoms/BodyText';
 import Button from '../components/atoms/Button';
 import { Searchbar } from '../components/molecules/Searchbar';
+import { InputField } from '../components/atoms/InputField';
 
 export default function User() {
   let loggedIn: boolean = false;
@@ -14,6 +15,7 @@ export default function User() {
         <Button textInput="Sign in" textSize="text-sm" textColor="text-green" boxWidth="w-20" boxHeight="h-10" boxColor="bg-main-purple" />
         <BodyText text="Or" text_color="white" styling="" size="medium" />
         <Button textInput="Register" textSize="text-sm" textColor="text-green" boxWidth="w-20" boxHeight="h-10" boxColor="bg-main-purple" />
+        <InputField placeholder='test text' styling='' type=''></InputField>
       </div>
     </div>
   );
