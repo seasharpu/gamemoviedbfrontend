@@ -4,7 +4,7 @@ import './App.css';
 import { Searchbar } from './components/molecules/Searchbar';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/molecules/Navbar";
-import Home from "./pages/home";
+import Home from "./pages/Home";
 import User from "./pages/User";
 import Game from "./pages/Game";
 import Franchise from "./pages/Franchise";
