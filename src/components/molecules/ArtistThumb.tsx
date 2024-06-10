@@ -19,7 +19,7 @@ export const ArtistThumb = ({ title, composer, thumbnail, width_height, styling 
             {thumbnail === undefined ?
                 <BsMusicNoteBeamed className="w-3/5 h-3/5 text-green"></BsMusicNoteBeamed>
                 :
-                <img className={`${sizing} overflow-y-clip overflow-x-clip bg-cover rounded-md `} alt={`thumbnail from ${title}`} src={thumbnail}></img>
+                <img className={` w-full h-full overflow-y-clip overflow-x-clip bg-cover rounded-md `} alt={`thumbnail from ${title}`} src={thumbnail}></img>
             }
             <div className="absolute  ">
                 <Title text={title} text_color="white" size="h3" styling=""></Title>
