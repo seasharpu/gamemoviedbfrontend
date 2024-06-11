@@ -29,7 +29,7 @@ export const Song = ({ title, composer, thumbnail }:
     return (
         <div className="w-full h-20 bg-blue-purple text-white rounded-md flex flex-row items-center justify-between px-2">
             <div className="w-14 h-14 bg-main-purple rounded-md flex justify-center items-center">
-            <ArtistThumb thumbnail={thumbnail} width_height="full" styling=""></ArtistThumb>
+                <ArtistThumb thumbnail={thumbnail} width_height="full" styling=""></ArtistThumb>
             </div>
             <div className="flex flex-col items-center w-4/6">
                 <LoopingTextField input={title} size="normal" text_color="white" styling="" ></LoopingTextField>

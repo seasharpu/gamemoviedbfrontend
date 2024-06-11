@@ -1,4 +1,5 @@
 import { Soundtrack } from "../components/molecules/Soundtrack";
+import Title from "../components/atoms/Title";
 
 export default function Game() {
 
@@ -25,9 +26,10 @@ export default function Game() {
 
     
     <div>
-      <Soundtrack soundtracklist={soundtracks} dropdown={true} styling=""></Soundtrack>
-      <Soundtrack soundtracklist={soundtracks} dropdown={false} styling=""></Soundtrack>
       <p>This is the Game Page</p>
+      <Title text="Soundtrack" text_color="black" size="h5" styling=""></Title>
+      <Soundtrack soundtracklist={soundtracks} dropdown={false} styling=""></Soundtrack>
+
     </div>
   );
 }

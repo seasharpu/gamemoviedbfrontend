@@ -32,7 +32,7 @@ export const Dropdown = ({ dropped_elements, dropped_down, styling }: {
                     ></IoChevronDownCircleOutline>
                 </motion.button>
             </div>
-            <div className={`w-full pt-5 ${isVisible ? "opacity-100 h-auto" : "opacity-0 h-0"}`}>
+            <div className={`w-full pt-5 flex flex-col items-center ${isVisible ? "opacity-100 h-auto" : "opacity-0 h-0"}`}>
                 {dropped_elements}
             </div>
         </div>
