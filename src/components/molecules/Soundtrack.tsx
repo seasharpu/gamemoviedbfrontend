@@ -8,14 +8,14 @@ export const Soundtrack = ({ soundtracklist, dropdown, styling }:
         styling: string
     }) => {
 
-    let dropdown_styling = "w-full flex flex-col items-center"
+    let soundtrack_list_styling = "w-full flex flex-col items-center"
 
     return (
-        <div className={`w-full ${styling}`}>
+        <div className={styling}>
             {dropdown === true ?
                 (
                     <Dropdown
-                        styling={dropdown_styling}
+                        styling={soundtrack_list_styling}
                         dropped_down={false}
                         dropped_elements={
                             soundtracklist.map((track, index) => (
@@ -26,7 +26,7 @@ export const Soundtrack = ({ soundtracklist, dropdown, styling }:
                         }
                     ></Dropdown>
                 ) : (
-                    <div className={dropdown_styling}>
+                    <div className={soundtrack_list_styling}>
                         {soundtracklist.map((track, index) => (
                             <div key={index} className="w-4/5 pt-2">
                                 <Song title={track.title} composer={track.composer} thumbnail={track.thumbnail}></Song>

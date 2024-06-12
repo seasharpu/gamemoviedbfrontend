@@ -33,7 +33,7 @@ export default function Franchise() {
   ]
 
   return (
-    <div className="flex flex-col justify-center items-center w-full">
+    <div className="bg-dark-purple h-screen w-full flex flex-col items-center">
       <p>This is the Franchise page</p>
       {franschiseData.map((franchise, index) => (
         <div key={index} className="w-full">

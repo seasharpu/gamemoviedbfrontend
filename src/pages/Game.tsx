@@ -1,9 +1,11 @@
 import { Soundtrack } from "../components/molecules/Soundtrack";
 import Title from "../components/atoms/Title";
+import { BodyText } from "../components/atoms/BodyText";
 
 export default function Game() {
 
 
+  //to be replaced with one game and its soundtrack.
   const soundtracks = [
     {
         "title": "hej1",
@@ -23,13 +25,10 @@ export default function Game() {
 ]
 
   return (
-
-    
-    <div>
-      <p>This is the Game Page</p>
-      <Title text="Soundtrack" text_color="black" size="h5" styling=""></Title>
-      <Soundtrack soundtracklist={soundtracks} dropdown={false} styling=""></Soundtrack>
-
+    <div className="bg-dark-purple h-screen w-full flex flex-col items-center">
+      <BodyText text="game stuff placeholder" text_color="white" styling="py-10" size="medium" />
+      <Title text="Soundtrack" text_color="white" size="h5" styling=""></Title>
+      <Soundtrack soundtracklist={soundtracks} dropdown={true} styling="w-5/6"></Soundtrack>
     </div>
   );
 }

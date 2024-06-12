@@ -19,7 +19,7 @@ export const Dropdown = ({ dropped_elements, dropped_down, styling }: {
 
     return (
         <div className={`${styling}`}>
-            <div className="flex flex-col items-end w-full h-0">
+            <div className="flex flex-col items-end w-full h-0 mx-">
                 <motion.button
                     whileHover={{
                         scale: 1.2,
@@ -28,7 +28,7 @@ export const Dropdown = ({ dropped_elements, dropped_down, styling }: {
                     >
                     <IoChevronDownCircleOutline 
                         onClick={toggleVisibility} 
-                        className={`w-10 h-10 relative -top-7 text-black transition-all ${isVisible ? "rotate-0" : "rotate-180"}`}
+                        className={`w-10 h-10 relative -top-7 text-white transition-all ${isVisible ? "rotate-0" : "rotate-180"}`}
                     ></IoChevronDownCircleOutline>
                 </motion.button>
             </div>
